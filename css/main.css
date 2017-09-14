@@ -103,40 +103,43 @@ label {
 	margin-top: 20px;
 }
 /*---1.5 - Lists ---*/
-section ul li:first-child a {
+.sprites section:first-child div{
 	background: url(../img/sprite-odin2.png)no-repeat 0 0;
 }
-section ul li:nth-child(2) a {
+.sprites section:nth-child(2) div{
 	background: url(../img/sprite-democracy-now.png)no-repeat 0 0;
 }
-section ul li:nth-child(3) a {
+.sprites section:nth-child(3) div{
 	background: url(../img/sprite-bodhi.png) no-repeat 0 0;
 }
-#row2 li:first-child a {
+.sprites2 section:first-child div {
 	background: url(../img/sprite-lincolncalling.png)no-repeat 0 0;
 }
-#row2 li:nth-child(2) a {
+.sprites2 section:nth-child(2) div {
 	background: url(../img/sprite-trim.png)no-repeat 0 0;
 }
-#row2 li:last-child a {
+.sprites2 section:last-child div {
 	background: url(../img/sprite-gorillagrocery.png)no-repeat 0 0;
 }
-section li a {
-	display: inline-block;
-	width: 187px;
+.sprites div, .sprites2 div{
+	margin: 0 auto;
+	width: 200px;
 	height: 187px;
 }
-section p {
-	margin-bottom: 133px;
-}
-section ul li a:hover, #row2 li a:hover {
+.sprites a:hover div, .sprites2 a:hover div {
 	background-position: 0 -187px;
 }
-section ul li {
-	display: inline-block;
+.sprites section:nth-child(2), .sprites2 section:nth-child(2) {
+	margin-left: 290px;
 }
-ul p {
+.sprites section:first-child, .sprites2 section:first-child {
+	margin-left: 300px;
+}
+.sprites section:last-child, .sprites2 section:last-child {
 	margin-right: 300px;
+}
+.sprites section, .sprites2 section {
+	margin-bottom: 50px;
 }
 /*---1.6 - Tables ---*/
 
@@ -151,8 +154,11 @@ header nav {
 	border-bottom: 1px solid #000;
 	text-align: center;
 }
-header nav li {
-	margin-right: 100px
+header nav li:first-child, header nav li:nth-child(2), header nav li:nth-child(4) {
+	margin-right: 100px;
+}
+header nav li:nth-child(4){
+	margin-left: 100px;
 }
 nav ul li {
 	vertical-align: middle;
